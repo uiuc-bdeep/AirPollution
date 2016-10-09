@@ -7,6 +7,7 @@ import schedule
 import datetime
 from geopy.distance import vincenty
 import pytz
+import os
 
 DATAPATH='/data/AirPollution/data2016fa_day/'
 
@@ -320,5 +321,4 @@ def job():
 
 
 job()
-time.sleep(1800)
-job()
+
