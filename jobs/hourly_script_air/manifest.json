@@ -1,0 +1,22 @@
+{
+	"main": "hourly_script_air.py",
+	"requirements": "requirements.txt",
+	"DEV": {
+		"config": {
+			"inputRoot": "/data/AirPollution/production",
+			"outputRoot": "/tmp/AirPollution/tests",
+			"args": {
+				"cities": "cities/cities_dev.json"
+			}
+		}
+	},
+	"PROD": {
+		"config": {
+			"inputRoot": "/data/AirPollution/production",
+			"outputRoot": "/tmp/AirPollution/tests",
+			"args": {
+				"cities": "cities/cities_prod.json"
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"environment": "DEV",
+	"inputRoot": "/data/AirPollution/production",
+	"outputRoot": "/tmp/AirPollution/tests",
+	"mainPath": ".",
+	"args": {
+		"cities": "cities/cities_testing.json"
+	}
+}
