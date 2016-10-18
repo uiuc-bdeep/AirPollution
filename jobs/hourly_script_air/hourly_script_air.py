@@ -8,8 +8,11 @@ import time
 import pytz
 import datetime
 import xml.etree.ElementTree as ET
+import logging
 
 from bdeep.context import generateOutputPath, getJobArgs, generateProjectPath
+
+log = logging.getLogger("BDEEP")
 
 def air_parser(URL, URL2, city_name):
 
@@ -51,11 +54,11 @@ def air_parser(URL, URL2, city_name):
 
 			break
 
-	print temp
+	log.debug(temp)
 	return temp[0]
 
 def get_date_name_file():
-   print "running get_date"
+   log.debug("running get_date")
    weekday=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
    month=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
    tz = pytz.timezone('Asia/Shanghai')
@@ -71,7 +74,7 @@ try:
     with open(citiesJSON, 'r') as f:
         cities = json.load(f)
 except Exception as error:
-    print error
+    log.error(error)
     assert False, "Cities JSON missing."
 
 
@@ -86,7 +89,7 @@ with open(outPath, 'a') as outfile:
 		samplewriter.writerow(['Time', 'City', 'Concentration', 'AQI', 'Weather', 'Wind_Speed', 'Wind_Direction'])
 	for city_ele in cityOutput:
 		samplewriter.writerow([city_ele['time'],city_ele['city'],city_ele['Concentration'],city_ele['AQI'],city_ele['weather'],city_ele['windSpeed'],city_ele['windDirection']])
-	print "job is done"
+	log.debug("job is done")
 
 
 

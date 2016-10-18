@@ -1,6 +1,10 @@
 {
+	"name": "hourly_air",
 	"main": "hourly_script_air.py",
 	"requirements": "requirements.txt",
+	"logging": {
+		"root": "/var/log/bdeep"	
+	},
 	"DEV": {
 		"config": {
 			"inputRoot": "/data/AirPollution/production",
