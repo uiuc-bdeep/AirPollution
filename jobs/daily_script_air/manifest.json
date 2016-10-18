@@ -1,0 +1,18 @@
+{
+	"main": "daily_script_air.py",
+	"requirements": "requirements.txt",
+	"DEV": {
+		"config": {
+			"inputRoot": "",
+			"outputRoot": "/tmp/AirPollution/tests",
+			"args": {}
+		}
+	},
+	"PROD": {
+		"config": {
+			"inputRoot": "",
+			"outputRoot": "/tmp/AirPollution/tests",
+			"args": {}
+		}
+	}
+}
