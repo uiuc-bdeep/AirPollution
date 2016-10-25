@@ -1,4 +1,5 @@
 {
+	"name": "daily_script_air",
 	"main": "daily_script_air.py",
 	"requirements": "requirements.txt",
 	"DEV": {
