@@ -19,4 +19,4 @@ os.system('mv ' + generateOutputPath('air_data.csv') + ' ' + new_folder_path)
 
 
 log.debug("finished job2 for weekly")
-#print "finished job2 for weekly"
+
