@@ -1,0 +1,3 @@
+#This Dockerfile is for tweet_crawler.py
+FROM python:2.7
+RUN pip install -r requirements.txt
