@@ -1,0 +1,7 @@
+{
+	"environment": "DEV",
+	"inputRoot": ".",
+	"outputRoot": "/tmp/AirPollution/tests",
+	"mainPath": ".",
+	"args": {}
+}
