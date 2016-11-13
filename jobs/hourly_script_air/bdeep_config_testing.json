@@ -1,6 +1,6 @@
 {
 	"environment": "DEV",
-	"inputRoot": "/data/AirPollution/production",
+	"inputRoot": ".",
 	"outputRoot": "/tmp/AirPollution/tests",
 	"mainPath": ".",
 	"args": {
